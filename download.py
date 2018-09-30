@@ -16,6 +16,8 @@ def download(uri_list):
   download_dir = os.path.join(os.getcwd(), DOWNLOAD_DIR)
 
   for uri in uri_list:
+    print(uri)
+    
     filename = uri[-6:]
     filepath = os.path.join(download_dir, filename)
 
